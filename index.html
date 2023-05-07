@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="project">
+
+     <div class="container">
+        <header>
+            <div class="icons">
+                <button id="bold"><i  class="fa-solid fa-b "></i></button>
+                <button id="italic"><i  class="fa-solid fa-italic "></i></button>
+                <button id="underline"><i  class="fa-sharp fa-solid fa-underline "></i></button>
+                <button id="strikethrough"><i  class="fa-sharp fa-solid fa-strikethrough "></i></button>
+                <button id="justifyLeft"><i id="justifyLeft" class="fa-solid fa-align-left "></i></button>
+                <button id="justifyCenter"><i  class="fa-solid fa-align-justify "></i></button>
+                <button id="justifyRight"><i  class="fa-solid fa-align-right  "></i></button>
+                <button id="redo"><i class="fa-solid fa-rotate-right rotate-right"></i></button>
+                <button id="undo"><i class="fa-solid fa-rotate-left rotate-left"></i></button>
+            </div>
+    
+            <div class="selectes">
+
+                <select class="FontsName">
+                  <option value="Open Sans">FontName</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Jomhuria">Jomhuria</option>
+                    <option value="Lobster">Lobster</option>
+                    <option  value="Poppins">Poppins</option>
+                    <option value="Roboto Condensed">Roboto</option>
+                    <option value="Qwitcher Grypen">Qwitcher</option>
+                </select>
+
+                <select class="FontsSize">
+                  <option value="16px">FontSize</option>
+                    <option value="18px">1</option>
+                    <option value="20px">2</option>
+                    <option value="24px">4</option>
+                    <option value="30px">6</option>
+                    <option value="40px">8</option>
+                    <option value="50px">10</option>
+                </select>
+
+                <div class="colorInp">
+                    <label >Color :</label>
+                    <input id="foreColor" type="color" class="color">
+                </div>
+   
+    
+                <div class="hilitInp">
+
+                <label>Hilit Color :</label>
+                <input id="backColor" type="color" class="hilitColor">
+
+                </div>
+
+            </div>
+
+
+          </header>
+    
+          <main>
+            <input  placeholder="Search for Word" class="search" type="text">
+            <div class="textarea" contenteditable="true">
+              
+            </div>
+            <div class="count">
+                <div class="words"> Words : <span></span></div>
+                <div class="letters"> Letters : <span></span></div>
+            </div>
+            <div class="btn">Listen Text</div>
+          </main>
+     </div>
+
+    </div>
+
+    <script src="main.js"></script>
+    </body>
+</html>
